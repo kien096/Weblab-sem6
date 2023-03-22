@@ -1,0 +1,14 @@
+extends ../main.pug 
+
+append style 
+    link(rel="stylesheet" href='/style/champion.css')
+
+append script 
+    script(src="/script/champion.js")
+
+append content 
+    input.search(type='text' placeholder='search...')
+    .galeries-wrapper
+        .loading
+        .error_search
+        .galeries

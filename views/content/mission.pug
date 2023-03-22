@@ -1,0 +1,23 @@
+extends ../main.pug
+
+append style 
+    link(rel="stylesheet" href='/style/mission.css')
+
+append script 
+    script(src="/script/mission.js")
+
+append content
+    .todo
+        form.todo-form(autocomplete='off')
+            input.todo-input(type='text' name='todo' placeholder='Enter your task')
+            button.todo-submit(type='submit') Add
+        .todo-list
+            <div class="todo-item">
+                <span class="todo-text">Learning english</span>
+                <i class="fa fa-trash todo-remove" data-value="Learning english"></i>
+            </div>
+
+            .todo-item
+                span.todo-text Learning english
+                i.fa.fa-trash.todo-remove(data-value='Learning english')
+

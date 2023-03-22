@@ -1,0 +1,148 @@
+extends ../main.pug 
+
+append style 
+    link(rel="stylesheet" href='/style/index.css')
+
+append content 
+    //- .search_area
+    //-     input#input_search.input_search(type='text' placeholder='Search...')
+    //-     label.label_input_search(for='input_search')
+    //-         i.fa-solid.fa-magnifying-glass
+
+    #primary.content-area
+        main
+            article
+                h1.content-name Rise of Kingdom
+                .entry-author
+                    span
+                    | Author: Le Kien
+                    sup VN
+                .slider.slider--cover
+                    // <div class="slider slider--fixed">
+                    // <div class="slider slider--proportional slider--proportional-16x9">
+                    .slider__inner
+                        input#slider__radiobox--1.slider__radiobox.slider__radiobox--1(checked='' type='radio' name='slider__radiobox')
+                        label.slider__radiobox-label.slider__radiobox-label--item.slider__radiobox-label--item-1(for='slider__radiobox--1')
+                        label.slider__radiobox-label.slider__radiobox-label--prev.slider__radiobox-label--prev-4(for='slider__radiobox--4')
+                        label.slider__radiobox-label.slider__radiobox-label--next.slider__radiobox-label--next-2(for='slider__radiobox--2')
+                        input#slider__radiobox--2.slider__radiobox.slider__radiobox--2(type='radio' name='slider__radiobox')
+                        label.slider__radiobox-label.slider__radiobox-label--item.slider__radiobox-label--item-2(for='slider__radiobox--2')
+                        label.slider__radiobox-label.slider__radiobox-label--prev.slider__radiobox-label--prev-1(for='slider__radiobox--1')
+                        label.slider__radiobox-label.slider__radiobox-label--next.slider__radiobox-label--next-3(for='slider__radiobox--3')
+                        input#slider__radiobox--3.slider__radiobox.slider__radiobox--3(type='radio' name='slider__radiobox')
+                        label.slider__radiobox-label.slider__radiobox-label--item.slider__radiobox-label--item-3(for='slider__radiobox--3')
+                        label.slider__radiobox-label.slider__radiobox-label--prev.slider__radiobox-label--prev-2(for='slider__radiobox--2')
+                        label.slider__radiobox-label.slider__radiobox-label--next.slider__radiobox-label--next-4(for='slider__radiobox--4')
+                        input#slider__radiobox--4.slider__radiobox.slider__radiobox--4(type='radio' name='slider__radiobox')
+                        label.slider__radiobox-label.slider__radiobox-label--item.slider__radiobox-label--item-4(for='slider__radiobox--4')
+                        label.slider__radiobox-label.slider__radiobox-label--prev.slider__radiobox-label--prev-3(for='slider__radiobox--3')
+                        label.slider__radiobox-label.slider__radiobox-label--next.slider__radiobox-label--next-1(for='slider__radiobox--1')
+                        .slider__slides
+                            .slider__slide.slider__slide--1
+                                img(alt='Placeholder 940x470' src='https://source.unsplash.com/random')
+                            .slider__slide.slider__slide--2
+                                img(alt='Placeholder 1200x600' src='https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+                            .slider__slide.slider__slide--3
+                                img(alt='Placeholder 300x150' src='https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80')
+                            .slider__slide.slider__slide--4
+                                img(alt='Placeholder 800x400' src='https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80')
+                .entry-content
+                    p
+                        | Have you played clones of Age of Empires or Civilizations or
+                        | other conquest games but didn&apos;t feel like a real ruler? Don&apos;t
+                        | be disappointed! Few Android strategy games can offer you the
+                        | true pleasure of managing a large kingdom. Rise of Kingdoms is
+                        | one of them. Perhaps even the best. If you&apos;re looking for new
+                        | adventures, it&apos;s time to explore Rise of Kingdoms at 
+                        a(href='https://www.rok.guide/' target='_blank') rok.guide
+                        br
+                        | We&apos;re sure we can think of at least
+                        strong 5 reasons&nbsp;
+                        | why you should play!
+                    
+                    .table-of-contents
+                        p Content:
+                        ol.table-content-list
+                            li
+                                a(href='#Ct1') Real time battles
+                            li
+                                a(href='#Ct2') Smooth world map
+                            li
+                                a(href='#Ct3') Eight unique Civilizations
+                            li
+                                a(href='#Ct4') Exploration and discovery
+                            li
+                                a(href='#Ct5') Unlimited troop movement
+                            li
+                                a(href='#Ct6') Alliance system
+                            li
+                                a(href='#Ct7') Conquer the kingdom
+                                
+                    h3#Ct1 Real-time battles
+                    p
+                        | Battles are not calculated in advance, they take place on the
+                        | map in real time. Any player can join and leave the battle at
+                        | any time, giving the game a real-time strategy feel. Are your
+                        | ally being attacked in your region? Send troops to help or
+                        | launch a surprise counterattack on the city.
+                    br
+
+                    h3#Ct2 Smooth world map
+                    p
+                        | All the events of the game take place on one huge map
+                        | inhabited by players and NPCs. No isolated bases or separate
+                        | battle screens. Never before used on mobile devices, the
+                        | infinite zoom feature allows you to freely switch between a
+                        | general view of the world and snapshots of individual cities
+                        | or barbarian outposts. The map features both natural obstacles
+                        | such as rivers and mountain ranges, as well as strategic
+                        | passages that must be conquered in order to gain access to
+                        | neighboring regions.
+                    br
+
+                    h3#Ct3 Eight unique Civilizations
+                    p
+                        | Choose one of 11 historically significant civilizations (there
+                        | will be even more in the future!) and help your civilization
+                        | go from one clan to world domination. Each civilization has
+                        | its own architecture, unique units and special advantages.
+                    br
+
+                    h3#Ct4 Exploration and discovery
+                    p
+                        | The world of Rise of Kingdoms is shrouded in thick fog. Send
+                        | scouts to explore these mysterious lands and the treasures
+                        | hidden there. Explore lost temples, barbarian fortresses,
+                        | mysterious caves and tribal villages, gather information about
+                        | your enemies and prepare for deadly battles!
+                    br
+
+                    h3#Ct5 Unlimited troop movement
+                    p
+                        | You can issue new orders to your soldiers at any time, giving
+                        | you unlimited strategic planning options. Launch an attack on
+                        | the enemy city, then capture it, meet with the allied army and
+                        | capture the tract. Send your soldiers to collect timber in the
+                        | nearby forest and task them with smashing several barbarian
+                        | clans along the way. Armies can be divided among multiple
+                        | commanders to fight multiple battles at the same time.
+                    br
+
+                    h3#Ct6 Alliance system
+                    p
+                        | A full set of alliance features allows players to help each
+                        | other: alliance chat with built-in translation, officer roles,
+                        | map markers to facilitate strategic planning, and much more!
+                        | Alliances can expand their territory to harvest resources,
+                        | capture mountain passes and barbarian outposts to fortify
+                        | their positions, and work together to achieve group success.
+                    br
+
+                    h3#Ct7 Conquer the kingdom
+                    p
+                        | Cooperate with members of your alliance to take control of
+                        | your kingdom. Engage in battle with other players and develop
+                        | tactics to win battles in the battle royale multiplayer mode.
+                        | Become the best, and you and your civilization will forever go
+                        | down in the history of the kingdom!
+                    br

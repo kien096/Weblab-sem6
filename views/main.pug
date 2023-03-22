@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        block style    
+            include shared/style/style.pug
+            include shared/style/font.pug
+        //- block script   
+        //-     include shared/script/script.pug
+    body
+        block login 
+        .container 
+            block header 
+                include header/header.pug
+            block menu  
+                include menu/menu.pug
+            #content.site-content
+                block content 
+            block footer
+                include footer/footer.pug
+    block script 
+        include shared/script/script.pug
